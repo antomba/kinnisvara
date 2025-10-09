@@ -1,8 +1,9 @@
 remote_theme: jekyll/minima@d4d779a
 minima:
-  skin: solarized
-  nav_pages:
-      - about.md
-      - portfolio.md
+  skin: auto
+#  nav_pages:
+#      - about.md
+#      - portfolio.md
   date_format: "%d.%m.%Y %H:%M"
-  show_excerpts: true
+  show_excerpts: false
+  hide_site_feed_link: true
