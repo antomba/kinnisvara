@@ -1,0 +1,8 @@
+theme: minima
+minima:
+  skin: solarized
+  nav_pages:
+      - about.md
+      - portfolio.md
+  date_format: "%d.%m.%Y %H:%M"
+  show_excerpts: true
