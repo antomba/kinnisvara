@@ -1,4 +1,4 @@
-remote_theme: minima
+remote_theme: jekyll/minima@d4d779a
 minima:
   skin: solarized
   nav_pages:
