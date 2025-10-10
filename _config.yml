@@ -1,7 +1,6 @@
+remote_theme: jekyll/minima@d4d779a
 title: Tallinn Real Estate Blog – Market News, Prices & Trends in Estonia
-
 description: Stay updated with the latest real estate news in Tallinn and Estonia. Explore housing prices, rental demand, investment opportunities, and expert property market insights.
-
 minima:
   skin: auto
 #  nav_pages:
