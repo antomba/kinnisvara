@@ -1,14 +1,44 @@
-title: Tallinn Real Estate Blog – Market News, Prices & Trends in Estonia
+title: Kinnisvara Blogi Eesti
+email: hello@example.com
+description: >-
+  Eesti kinnisvarablogi: turuülevaated, ostu- ja müüginõuanded, üüriinfo,
+  laenuteemad ja praktilised juhendid ostjale, müüjale ning investorile.
+lang: et
+locale: et_EE
+timezone: Europe/Tallinn
+url: "https://example.github.io"
+baseurl: ""
+permalink: /:categories/:title/
 
-description: Stay updated with the latest real estate news in Tallinn and Estonia. Explore housing prices, rental demand, investment opportunities, and expert property market insights.
+github_username: example
 
-remote_theme: jekyll/minima@d4d779a
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
 
-minima:
-  skin: auto
-#  nav_pages:
-#      - about.md
-#      - portfolio.md
-  date_format: "%d.%m.%Y %H:%M"
-  show_excerpts: false
-  hide_site_feed_link: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: "/blog/leht-:num/"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Toimetus
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

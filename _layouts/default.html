@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'et' }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Liigu sisu juurde</a>
+    {% include header.html %}
+    <main id="main-content" class="container">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
