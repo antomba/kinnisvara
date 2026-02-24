@@ -61,6 +61,14 @@ a:focus {
   margin-top: 2rem;
 }
 
+.footer-inner {
+  padding: 1.1rem 0 1.25rem;
+}
+
+.footer-inner p {
+  margin: 0 0 0.7rem;
+}
+
 .container {
   width: min(100% - 2rem, var(--max-width));
   margin-inline: auto;
@@ -94,6 +102,10 @@ a:focus {
   display: inline-block;
   padding: 0.4rem 0.5rem;
   border-radius: 0.35rem;
+}
+
+.footer-links {
+  gap: 0.25rem;
 }
 
 .main-nav a[aria-current="page"],
