@@ -18,14 +18,10 @@ layout: default
     <ul class="meta-list">
       <li><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time></li>
       <li>{{ minutes }} min lugemist</li>
-      {% if page.categories %}<li>Kategooriad: {{ page.categories | join: ", " }}</li>{% endif %}
       {% if page.tags %}<li>Sildid: {{ page.tags | join: ", " }}</li>{% endif %}
     </ul>
 
     <div class="taxonomy-links">
-      {% for category in page.categories %}
-        <a class="badge" href="{{ '/kategooriad/' | relative_url }}#{{ category | slugify }}">{{ category }}</a>
-      {% endfor %}
       {% for tag in page.tags %}
         <a class="badge" href="{{ '/sildid/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
       {% endfor %}
@@ -50,15 +46,7 @@ layout: default
           {% endif %}
         {% endfor %}
 
-        {% assign shared_cats = 0 %}
-        {% for category in post.categories %}
-          {% if page.categories contains category %}
-            {% assign shared_cats = shared_cats | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-
-        {% assign relevance = shared_tags | plus: shared_cats %}
-        {% if relevance > 0 and related_count < 3 %}
+        {% if shared_tags > 0 and related_count < 3 %}
           {% assign related_count = related_count | plus: 1 %}
           <li class="post-card">
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
