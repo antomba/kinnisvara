@@ -7,7 +7,9 @@ lang: et
 locale: et_EE
 timezone: Europe/Tallinn
 url: "https://example.github.io"
-baseurl: ""
+# GitHub project pages: https://<user>.github.io/kinnisvara
+# If you later use a custom domain, set this back to "".
+baseurl: "/kinnisvara"
 permalink: /:categories/:title/
 
 github_username: example

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.github.io/sitemap.xml
+Sitemap: https://example.github.io/kinnisvara/sitemap.xml
